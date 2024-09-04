@@ -1,0 +1,58 @@
+body {
+  background-color: #f0f0f0; /* Light gray background color for the entire page */
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif; /* Use the Outfit font family if applicable */
+}
+
+.contact-list {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.back-to-form-button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
