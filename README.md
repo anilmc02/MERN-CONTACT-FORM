@@ -1,12 +1,12 @@
 # MERN Contact Form
-**A simple contact form where users can submit their details (name, email, and message). This application is built using a React frontend with a Node.js backend and MongoDB for data storage.
+A simple contact form where users can submit their details (name, email, and message). This application is built using a React frontend with a Node.js backend and MongoDB for data storage.
 
-Features
-Form Submission: Users can submit their name, email, and a message through the contact form.
-Contact Management: Submitted contact details are stored in a MongoDB database and can be retrieved for viewing.
-Contact Viewing: Users can view a list of contacts and see individual contact details.
-Web3Forms Integration: The form integrates with Web3Forms for alternative form handling.
-Technologies
+## Features
+- **Form Submission**: Users can submit their name, email, and a message through the contact form.
+- **Contact Management**: Submitted contact details are stored in a MongoDB database and can be retrieved for viewing.
+- **Contact Viewing**: Users can view a list of contacts and see individual contact details.
+- **Web3Forms Integration**: The form integrates with Web3Forms for alternative form handling.
+## Technologies
 Frontend: React, React Router
 Backend: Node.js, Express.js
 Database: MongoDB
