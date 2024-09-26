@@ -1,167 +1,70 @@
 MERN Contact Form
-This is a contact form built using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to submit their contact details, which are saved in a MongoDB database. The application provides a frontend for submitting contact information and a backend API for handling form submissions.
+A simple contact form where users can submit their details (name, email, and message). This application is built using a React frontend with a Node.js backend and MongoDB for data storage.
 
 Features
-Frontend built with React
-Backend API built with Node.js and Express
-MongoDB database for storing contact form submissions
-Contact details are displayed on a separate details page
-Full CRUD capabilities (Create, Read)
-Axios used for API requests
-Web3Forms integration for form submission
-Custom CSS for styling
-Prerequisites
-Node.js (v14 or later)
-MongoDB (Local or Cloud-based like MongoDB Atlas)
-npm or yarn for package management
-React Router for navigation
-Getting Started
-1. Clone the repository
+Form Submission: Users can submit their name, email, and a message through the contact form.
+Contact Management: Submitted contact details are stored in a MongoDB database and can be retrieved for viewing.
+Contact Viewing: Users can view a list of contacts and see individual contact details.
+Web3Forms Integration: The form integrates with Web3Forms for alternative form handling.
+Technologies
+Frontend: React, React Router
+Backend: Node.js, Express.js
+Database: MongoDB
+Styling: CSS
+Web3Forms: Integration for form submission
+Installation
+Clone the Repository
 bash
 Copy code
-git clone https://github.com/your-username/mern-contact-form.git
-cd mern-contact-form
-2. Install dependencies
-For the backend (server):
+git clone https://github.com/yourusername/mern-contact-form.git
+Install Backend Dependencies
+Navigate to the server directory and install the dependencies:
+
 bash
 Copy code
 cd server
-npm install
-For the frontend (client):
+yarn install
+Install Frontend Dependencies
+Navigate to the client directory and install the dependencies:
+
 bash
 Copy code
 cd client
-npm install
-3. Set up environment variables
+yarn install
+Configure Environment Variables
 Create a .env file in the server directory with the following content:
 
 bash
 Copy code
+MONGO_URI=your_mongodb_connection_string
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/test
-4. Start MongoDB
-Ensure that MongoDB is running locally or configure it to connect to a cloud instance.
+WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
+Replace your_mongodb_connection_string with your MongoDB connection string and your_web3forms_access_key with your Web3Forms access key.
 
+Run the Application
+Start the Backend Server
 bash
 Copy code
-mongod
-5. Run the backend
-Start the Express server by running the following command in the server directory:
-
+cd server
+yarn start
+Start the Frontend Development Server
 bash
 Copy code
-npm start
-The backend server will run on http://localhost:5000.
-
-6. Run the frontend
-Start the React frontend by running the following command in the client directory:
-
-bash
-Copy code
-npm start
-The frontend will run on http://localhost:3000.
+cd client
+yarn start
+Access the Application
+Open your browser and navigate to http://localhost:3000 to use the application.
 
 API Endpoints
-1. Get all contacts
-bash
-Copy code
-GET /api/contact
-Fetches all the contact form submissions stored in MongoDB.
-
-2. Add a new contact
-bash
-Copy code
-POST /api/contact
-Creates a new contact form submission.
-
-Payload:
-json
-Copy code
-{
-  "name": "John Doe",
-  "email": "johndoe@example.com",
-  "message": "Hello, this is a message!"
-}
-3. Get contact by ID
-bash
-Copy code
-GET /api/contact/:id
-Fetches a specific contact form submission by its ID.
-
-Components
-1. ContactForm.js
-This component renders the contact form, handles user input, and sends the form data to both Web3Forms and your backend.
-
-Features:
-Uses axios to post form data.
-Handles form validation and submission.
-Displays a success message upon form submission.
-2. ContactList.js
-Displays a list of all contacts stored in the database, fetched via a GET request to the backend.
-
-Features:
-View all contact submissions.
-Select and view contact details in a modal.
-3. ContactDetails.js
-This component displays detailed information about a specific contact based on the contact ID fetched from the URL.
-
-Features:
-Uses useParams from react-router-dom to capture the contact ID.
-Fetches contact details via axios.
-CSS Files
-1. ContactForm.css
-Styles the contact form and handles responsive design. Below is a summary of some key styles:
-
-Classes Used:
-.contact-container: Overall layout for the contact form.
-.contact-left, .contact-right: Split the form into two sections.
-.contact-input: Input fields are styled with this class.
-.success-message: Styled for displaying a success message after form submission.
-.go-back-button: Button for navigating back after submission.
-2. ContactList.css
-Styles the contact list, table, and contact details display.
-
-Classes Used:
-.contact-list: Container for the contact list table.
-.contact-details: Used to display detailed information for a selected contact.
-.back-to-form-button: Styled button for navigating back to the form.
-3. ContactDetails.css
-Styles the detailed view of an individual contact, including labels and layout.
-
-Classes Used:
-.contact-details: Container for showing individual contact details.
-<strong> tags for labels such as name, email, and message.
-Backend
-server.js
-The main entry point for the Express server. It connects to MongoDB, uses middleware for JSON parsing and CORS, and sets up routes.
-
-db.js
-Contains MongoDB connection logic using mongoose. Ensures a successful connection and handles errors.
-
-contact.js (Route)
-Defines API routes for managing contacts. It supports the following operations:
-
-GET /api/contact – Fetch all contacts.
-POST /api/contact – Create a new contact.
-contact.js (Model)
-Defines the schema for storing contacts in MongoDB using mongoose.
-
-Running Tests
-You can manually test API endpoints using Postman or cURL.
-
-Test the form submission:
-
-Use Postman or the frontend form to submit new contacts to the /api/contact endpoint.
-
-Test fetching contacts:
-
-Send a GET request to /api/contact and check if the list of contacts is correctly returned.
-
-Future Enhancements
-Add input validation to the contact form.
-Add unit tests for both frontend and backend.
-Implement pagination for the contact list.
-Add error handling and notifications for failed form submissions.
-Improve the UI with more responsive and accessible design.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+POST /api/contact: Submit a new contact
+GET /api/contact: Retrieve a list of all contacts
+GET /api/contact/
+: Get details of a specific contact
+Contributing
+Fork the repository
+Create a feature branch
+Commit your changes
+Push to the branch
+Create a new Pull Request
+Contact
+If you have any questions, feel free to reach out to anilmc002@gmail.com.
