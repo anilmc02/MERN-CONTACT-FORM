@@ -1,5 +1,5 @@
-##MERN Contact Form
-A simple contact form where users can submit their details (name, email, and message). This application is built using a React frontend with a Node.js backend and MongoDB for data storage.
+# MERN Contact Form
+**A simple contact form where users can submit their details (name, email, and message). This application is built using a React frontend with a Node.js backend and MongoDB for data storage.
 
 Features
 Form Submission: Users can submit their name, email, and a message through the contact form.
