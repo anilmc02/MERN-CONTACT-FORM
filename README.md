@@ -1,4 +1,4 @@
-MERN Contact Form
+##MERN Contact Form
 A simple contact form where users can submit their details (name, email, and message). This application is built using a React frontend with a Node.js backend and MongoDB for data storage.
 
 Features
