@@ -1,5 +1,5 @@
 MERN Contact Form
-This is a contact form built using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to submit their contact details which are saved in a MongoDB database. The application provides a frontend for submitting contact information and a backend API for handling form submissions.
+This is a contact form built using the MERN (MongoDB, Express, React, Node.js) stack. It allows users to submit their contact details, which are saved in a MongoDB database. The application provides a frontend for submitting contact information and a backend API for handling form submissions.
 
 Features
 Frontend built with React
@@ -10,32 +10,6 @@ Full CRUD capabilities (Create, Read)
 Axios used for API requests
 Web3Forms integration for form submission
 Custom CSS for styling
-Project Structure
-bash
-Copy code
-mern-contact-form/
-├── client/
-│   ├── public/
-│   └── src/
-│       ├── components/
-│       │   ├── ContactDetails.js
-│       │   ├── ContactForm.js
-│       │   └── ContactList.js
-│       ├── App.js
-│       ├── styles/
-│       │   ├── ContactDetails.css
-│       │   ├── ContactForm.css
-│       │   └── ContactList.css
-├── server/
-│   ├── config/
-│   │   └── db.js
-│   ├── models/
-│   │   └── contact.js
-│   ├── routes/
-│   │   └── contact.js
-│   ├── .env
-│   └── server.js
-├── README.md
 Prerequisites
 Node.js (v14 or later)
 MongoDB (Local or Cloud-based like MongoDB Atlas)
@@ -121,7 +95,7 @@ This component renders the contact form, handles user input, and sends the form 
 Features:
 Uses axios to post form data.
 Handles form validation and submission.
-Displays success message upon form submission.
+Displays a success message upon form submission.
 2. ContactList.js
 Displays a list of all contacts stored in the database, fetched via a GET request to the backend.
 
